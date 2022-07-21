@@ -1,0 +1,157 @@
+
+
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap);
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*background-color: #ddcea796;*/
+}
+
+.nav_head {
+    display: flex;
+    flex-flow: row wrap;
+    min-height: 30px;    
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(3, 67, 104);
+}
+.nav_head>div {
+    margin: 5px 20px;
+    width: fit-content;
+}
+.social-link, .lokal-link {
+    color: orange;
+    font-family: "Open Sans";
+    font-style: normal;
+    text-decoration: none;
+    font-weight: 400;
+    transition: 500ms
+}
+
+.social-link:hover {
+    text-decoration: underline;
+    color: rgb(253, 209, 67);
+    font-size: 1.25em;
+}
+
+main {
+    background: linear-gradient(160deg, transparent 30%, #f4d484b7, rgba(97, 220, 220, 0.592));
+    padding: auto;
+    padding-bottom: 10px;
+}
+   
+.img-header {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    background: url(../images/186.jpg) top center no-repeat;
+    background-size: cover;
+    opacity: 1;
+    padding-bottom: 50px;
+}
+
+.img-header__header {
+    background-color: rgba(127, 255, 212, 0.422);
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    color: #336699;
+    text-align: center;
+    margin: 20px;
+    padding: 10px 40px 15px 40px;
+    /*border-left: solid 5px #336699;*/
+    border-radius: 50%;
+    /*border-bottom: solid 5px #336699;*/
+    /*border-bottom-left-radius: 50px 20px;*/
+    opacity: 1;
+    transition: 500ms;
+}
+.img-header__header:hover {
+    font-size: 2.5em;
+    box-shadow: 3px 3px 20px 10px azure;
+    color: orange;
+}
+
+.img-header__fon {
+    margin: 10px;
+    padding: 50px;
+    background-color: rgba(38, 38, 100, 0%);
+    border-radius: 50%;     
+    }
+  
+.img-header__img {
+    box-shadow: 20px #01151d;
+    border-radius: 50%;
+    transition: 2s
+    /*border: thick double #32a1ce;*/  
+}
+.img-header__img:hover {
+    box-shadow: -30px 32px 29px 0px azure;
+    width: 400px; height: 400px;
+}
+
+.article {
+    margin: 20px;
+}
+
+.article h2 {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    color: #015268;
+}
+
+.main__section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    column-gap: 20px;
+    grid-template-rows: auto;
+    align-items: stretch;
+    justify-content: space-around;
+    grid-auto-flow: dense;
+    
+}
+
+
+.fotter {
+    display: flex;
+    flex-flow: column wrap;
+    min-height: 30px;    
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px;
+    background-color: rgb(3, 67, 104);
+}
+.fotter>div {
+    margin: 0px 0px;
+}
+.fotter>div:last-child {
+    align-self: flex-end;
+}
+.local-link {
+    color: orange;
+    text-decoration: none;
+    font-family: "Open Sans";
+    font-style: normal;
+    transition: 500ms;
+}
+.local-link:hover {
+    text-decoration: underline;
+    color: rgba(124, 240, 213, 0.916);
+    font-size: 1.25em; 
+}
+@media (min-width: 700px) {
+    .fotter {
+        height: 30px;    
+    }
+}
+@media (max-width: 700px) {
+    .nav_head {
+        flex-direction: column; 
+        justify-content: center;
+        align-items: flex-start;   
+    }
+}
