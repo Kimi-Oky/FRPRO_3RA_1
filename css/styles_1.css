@@ -112,10 +112,82 @@ main {
     align-items: stretch;
     justify-content: space-around;
     grid-auto-flow: dense;
-    
+}
+
+/* =========================================================================== */
+/* Добавление иконок в заголовки разделов */
+
+.aducation__h2::before {
+    display: inline-block;
+    content: "";
+    width: 25px;
+    height: 25px;
+    background: url(../images/school_FILL0_wght400_GRAD0_opsz48.svg) 
+                bottom center
+                no-repeat;
+    background-size: contain;
+    margin-right: 8px;
+    margin-bottom: -3px;
+}
+.about-me__h2::before {
+    display: inline-block;
+    content: "";
+    width: 25px;
+    height: 25px;
+    background: url(../images/AvatfrR2.jpg) 
+                bottom center
+                no-repeat;
+    background-size: contain;
+    opacity: 90%;
+    margin-right: 8px;
+    margin-bottom: -3px;
+    border-radius: 50%;
+}
+.expirience__h2::before {
+    display: inline-block;
+    content: "";
+    width: 25px;
+    height: 25px;
+    background: url(../images/settings_black_24dp.svg) 
+                bottom center
+                no-repeat;
+    background-size: contain;
+    opacity: 50%;
+    margin-right: 8px;
+    margin-bottom: -3px;
+    border-radius: 50%;
+}
+.hobby__h2::before {
+    display: inline-block;
+    content: "";
+    width: 25px;
+    height: 25px;
+    background: url(../images/favorite_black_24dp.svg) 
+                bottom center
+                no-repeat;
+    background-size: contain;
+    opacity: 50%;
+    margin-right: 8px;
+    margin-bottom: -3px;
+    border-radius: 50%;
+}
+.the_road__h2::before {
+    display: inline-block;
+    content: "";
+    width: 25px;
+    height: 25px;
+    background: url(../images/rocket_launch_black_24dp.svg) 
+                bottom center
+                no-repeat;
+    background-size: contain;
+    opacity: 70%;
+    margin-right: 8px;
+    margin-bottom: -3px;
+    border-radius: 50%;
 }
 
 
+/* ===================================================================== */
 .fotter {
     display: flex;
     flex-flow: column wrap;
