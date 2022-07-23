@@ -223,6 +223,50 @@ main {
 
 
 /* ===================================================================== */
+    /* стрелка наверх */
+
+.back_up {
+    position: fixed;
+    right: 10px;
+    bottom: 50px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    background-color: transparent ;
+}
+.back_up:hover,
+.back_up:focus {
+    filter: brightness(1.5);
+    border: 1px solid #336699;
+    outline: none;
+}
+.back_up::before,
+.back_up::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.back_up::before {
+    width: 5px;
+    height: 25px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    background-color: #336699;
+}
+.back_up::after {
+    width: 10px;
+    height: 10px;
+    margin-top: -5px;
+    transform: translate(-50%, -50%) rotate(45deg);
+    border-left: 5px solid #336699;
+    border-top: 5px solid #336699;
+
+}
+
+/* ================================================================================ */
 .fotter {
     display: flex;
     flex-flow: column wrap;
